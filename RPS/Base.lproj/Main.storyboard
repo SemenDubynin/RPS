@@ -36,16 +36,25 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="96"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                                 <state key="normal" title="✊🏿"/>
+                                                <connections>
+                                                    <action selector="rockButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uvX-gU-PI5"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTT-o9-cBI">
                                                 <rect key="frame" x="136" y="0.0" width="75" height="96"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                                 <state key="normal" title="✌🏿"/>
+                                                <connections>
+                                                    <action selector="scissorsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YmH-7d-KLt"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KaM-JZ-XhF">
                                                 <rect key="frame" x="272" y="0.0" width="75" height="96"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                                 <state key="normal" title="✋🏿"/>
+                                                <connections>
+                                                    <action selector="paperButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PTX-dl-vR4"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -53,6 +62,9 @@
                                         <rect key="frame" x="113.5" y="306" width="120" height="36"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
                                         <state key="normal" title="PLAY AGAIN"/>
+                                        <connections>
+                                            <action selector="playAgainButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4dV-WS-5Sr"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -64,6 +76,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="paperButton" destination="KaM-JZ-XhF" id="o7W-iz-rsS"/>
+                        <outlet property="playAgainButton" destination="aUj-aQ-IBl" id="EUj-47-kKV"/>
+                        <outlet property="robotButton" destination="mNf-3g-T46" id="qvA-za-yH1"/>
+                        <outlet property="rockButton" destination="q7E-hb-fE1" id="pim-BC-VGt"/>
+                        <outlet property="scissorsButton" destination="WTT-o9-cBI" id="XUY-nb-86X"/>
+                        <outlet property="statusLabel" destination="3bv-Cj-VSJ" id="pNa-qH-ZDL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
